@@ -41,7 +41,7 @@ export default class SecondFeed extends Component {
 
     componentDidMount() {
         /*fetch("https://nhs-services.herokuapp.com/api/patients/1149486687")*/
-        fetch("https://run.mocky.io/v3/c28afccc-41bf-4ca9-8acb-921951a0a48c")
+        fetch("https://run.mocky.io/v3/93b87da8-7fe0-4c09-9b08-208f682de621")
             .then((response) => response.json())
             .then((userData) => this.setState({userData}));
     }

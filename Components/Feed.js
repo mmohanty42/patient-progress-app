@@ -41,7 +41,7 @@ export default class BasicTimeLine extends Component {
 
     componentDidMount() {
         /*fetch("https://nhs-services.herokuapp.com/api/patients/2147483647")*/
-        fetch("https://run.mocky.io/v3/f5c2db75-de83-4373-ab12-c9f984b60fbc")
+        fetch("https://run.mocky.io/v3/93b87da8-7fe0-4c09-9b08-208f682de621")
             .then((response) => response.json())
             .then((userData) => this.setState({userData}));
     }
@@ -93,7 +93,7 @@ export default class BasicTimeLine extends Component {
                 message: "COVID-19 severity: ",
             },
             other: {
-                message: "Mild symptoms of ",
+                message: "Diagnosed with ",
             },
         };
 
@@ -121,66 +121,26 @@ export default class BasicTimeLine extends Component {
                 {/*CODE FOR JANE ENDS*/}
 
                 {/*CODE FOR FEED STARTS */}
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[0]}
-                    data={this.state.userData.health_recordings[0].temperature}
-                    description={dataDescription.temperature.message}
-                    extras={"°C"}
-                />
+
 
                 <TimelineInfo
-                    rawData={this.state.userData.health_recordings[0]}
-                    data={this.state.userData.diagnoses[2].diagnosis_name}
+                    rawData={this.state.userData.diagnoses[0]}
+                    data={this.state.userData.diagnoses[0].diagnosis_name}
                     description={dataDescription.other.message}
                     extras={""}
                 />
 
                 <TimelineInfo
-                    rawData={this.state.userData.health_recordings[0]}
-                    data={this.state.userData.health_recordings[0].heart_rate}
-                    description={dataDescription.heartRate.message}
-                    extras={" bpm"}
-                />
-
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[0]}
-                    data={this.state.userData.ward.nurses[0].full_name}
-                    description={dataDescription.nurse.message}
+                    rawData={this.state.userData.diagnoses[1]}
+                    data={this.state.userData.diagnoses[1].diagnosis_name}
+                    description={dataDescription.other.message}
                     extras={""}
-                />
-
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[1]}
-                    data={this.state.userData.health_recordings[1].heart_rate}
-                    description={dataDescription.heartRate.message}
-                    extras={" bpm"}
-                />
-
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[1]}
-                    data={this.state.userData.diagnoses[0].treatment}
-                    description={dataDescription.treatment.message}
-                    extras={""}
-                />
-
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[1]}
-                    data={this.state.userData.diagnoses[0].severity}
-                    description={dataDescription.covid.message}
-                    extras={""}
-                />
-
-                <TimelineInfo
-                    rawData={this.state.userData.health_recordings[1]}
-                    data={this.state.userData.health_recordings[1].temperature}
-                    description={dataDescription.temperature.message}
-                    extras={"°C"}
                 />
 
                 <TimelineEnd
-                    rawData={this.state.userData.health_recordings[1]}
-                    data={this.state.userData.ward.ward_name}
-                    description={dataDescription.ward.message}
+                    rawData={this.state.userData.diagnoses[2]}
+                    data={this.state.userData.diagnoses[1].diagnosis_name}
+                    description={dataDescription.other.message}
                     extras={""}
                 />
                 {/*CODE FOR FEED ENDS*/}
