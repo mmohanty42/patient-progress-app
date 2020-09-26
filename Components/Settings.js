@@ -51,7 +51,7 @@ const Settings = ({ navigation }) => {
         <View style={styles.profileContainer}>
           <View>
             <Text style={styles.profile}>Profile</Text>
-            <Text style={styles.johnDoe}> Snehashis </Text>
+            <Text style={styles.johnDoe}>Snehashis</Text>
           </View>
           <Image
             source={require("../assets/JohnDoe.png")}

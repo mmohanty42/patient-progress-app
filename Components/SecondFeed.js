@@ -104,7 +104,7 @@ export default class SecondFeed extends Component {
           <View style={styles.userContainer}>
             <Text style={styles.userName}>{this.state.userData.full_name}</Text>
             <Text style={styles.userNo}>
-              NHS NUMBER: {this.state.userData.nhs_number}
+              UID NUMBER: {this.state.userData.nhs_number}
             </Text>
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.userNo}>PROGRESS: </Text>
@@ -241,7 +241,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 2,
     shadowRadius: 4,
     elevation: 5,
-    borderRadius: 40,
   },
   //Pop-up styling
   popupBack: {

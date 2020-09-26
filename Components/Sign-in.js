@@ -91,7 +91,7 @@ const SignInScreen = ({ navigation }) => {
               },
             ]}
           >
-            NHS Number
+            UID Number
           </Text>
           <View style={styles.action}>
             <FontAwesome name="user-o" color="black" size={20} />

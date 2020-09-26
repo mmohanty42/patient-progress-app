@@ -5,7 +5,7 @@ import { View, Image } from "react-native";
 import CustomButton from "./CustomButton";
 
 //Import logo
-import bigger from "../assets/+ ;
+import bigger from "../assets/smaller-logo.png";
 
 const StartScreen = ({ navigation }) => {
   return (

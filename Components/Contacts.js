@@ -69,7 +69,7 @@ const Contacts = ({ navigation }) => {
 
             <View style={styles.userInfo}>
               <View style={styles.userContainer}>
-                <Text style={styles.userName}> Snehashis </Text>
+                <Text style={styles.userName}>Snehashis</Text>
               </View>
 
               <View style={styles.userContainer}>
@@ -248,7 +248,7 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "Regular", fontSize: 16 }}>
-                        Relative's NHS Number:
+                        Relative's UID Number:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
@@ -404,7 +404,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}> Sreevidya </Text>
+                  <Text style={styles.relativeFullName}>Sreevidya</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>
@@ -432,7 +432,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}> Hema </Text>
+                  <Text style={styles.relativeFullName}>Hema</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>

@@ -43,7 +43,7 @@ export default function Nurse() {
 
           <Text style={styles.nurseMaryPoppins}>Nurse Mary Poppins</Text>
           <Text style={styles.stGeorgesHospital}>St George's Hopsital</Text>
-          <Text style={styles.birmingham}>Birmingham</Text>
+          <Text style={styles.bengaluru}>Bengaluru</Text>
         </View>
 
         <View style={styles.donateNHS}>
@@ -228,7 +228,7 @@ const styles = StyleSheet.create({
     marginTop: "1%",
     textAlign: "right",
   },
-  birmingham: {
+  bengaluru: {
     color: "#121212",
     fontSize: 16,
     fontFamily: "Regular",
