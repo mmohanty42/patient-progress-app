@@ -69,11 +69,11 @@ const Contacts = ({ navigation }) => {
 
             <View style={styles.userInfo}>
               <View style={styles.userContainer}>
-                <Text style={styles.userName}>John Doe</Text>
+                <Text style={styles.userName}>Snehashis</Text>
               </View>
 
               <View style={styles.userContainer}>
-                <Text style={styles.userNo}>NHS NUMBER: 000 000 0000</Text>
+                <Text style={styles.userNo}>UID NUMBER: 123 456 7890</Text>
               </View>
             </View>
           </View>
@@ -86,7 +86,7 @@ const Contacts = ({ navigation }) => {
               onPress={() => setModalOpen(true)}
             >
               <View style={styles.buttonTitle}>
-                <Text style={styles.buttonText}>My relatives/friends</Text>
+                <Text style={styles.buttonText}> Add Emergency Contacts </Text>
               </View>
 
               <View style={styles.buttonImage}>
@@ -248,7 +248,7 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "Regular", fontSize: 16 }}>
-                        Relative's NHS Number:
+                        Relative's UID Number:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
@@ -404,7 +404,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}>Ellen Wright</Text>
+                  <Text style={styles.relativeFullName}>Sreevidya</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>
@@ -432,7 +432,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}>Jill Johnson</Text>
+                  <Text style={styles.relativeFullName}>Hema</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>

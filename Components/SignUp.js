@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   View,
@@ -96,7 +97,7 @@ const SignUpScreen = ({ navigation }) => {
               },
             ]}
           >
-            NHS Number
+           UID Number
           </Text>
           <View style={styles.action}>
             <FontAwesome name="user-o" color="black" size={20} />

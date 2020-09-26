@@ -37,8 +37,8 @@ export function DrawerContent(props) {
                 }}
               >
                 <View style={{ flexDirection: "column" }}>
-                  <Title style={styles.name}>John Doe</Title>
-                  <Caption style={styles.caption}>Birmingham</Caption>
+                  <Title style={styles.name}>Snehashis</Title>
+                  <Caption style={styles.caption}>Bengaluru</Caption>
                 </View>
                 <Avatar.Image source={JohnDoe} size={70} />
               </View>

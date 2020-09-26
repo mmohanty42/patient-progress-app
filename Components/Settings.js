@@ -51,7 +51,7 @@ const Settings = ({ navigation }) => {
         <View style={styles.profileContainer}>
           <View>
             <Text style={styles.profile}>Profile</Text>
-            <Text style={styles.johnDoe}>John Doe</Text>
+            <Text style={styles.johnDoe}>Snehashis</Text>
           </View>
           <Image
             source={require("../assets/JohnDoe.png")}
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
     textAlign: "right",
   },
-  johnDoe: {
+  Snehashis: {
     color: "#393b3a",
     fontSize: 18,
     fontFamily: "Medium",
