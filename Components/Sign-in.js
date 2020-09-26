@@ -171,7 +171,7 @@ const SignInScreen = ({ navigation }) => {
             </TouchableOpacity>
           </View>
           <Image
-            source={require("../assets/bigger-logo.png")}
+            source={require("../assets/smaller-logo.png")}
             style={styles.logo}
             resizeMode="stretch"
           />

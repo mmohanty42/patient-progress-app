@@ -5,17 +5,17 @@ import OnLayout from "react-native-on-layout";
 const TimelineInfo = (props) => {
   // Text formatting functions
   const formatTime = () => {
-    return props.rawData.date_modified.slice(11, 16);
+    return props.rawData.date_diagnosed.slice(11, 16);
   };
 
   const formatDate = () => {
-    return `${props.rawData.date_modified.slice(
+    return `${props.rawData.date_diagnosed.slice(
       8,
       10
-    )}/${props.rawData.date_modified.slice(
+    )}/${props.rawData.date_diagnosed.slice(
       5,
       7
-    )}/${props.rawData.date_modified.slice(0, 4)}`;
+    )}/${props.rawData.date_diagnosed.slice(0, 4)}`;
   };
 
   return (
