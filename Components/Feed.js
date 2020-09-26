@@ -249,7 +249,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 2,
     shadowRadius: 4,
     elevation: 5,
-    borderRadius: 40,
   },
   //Pop-up styling
   popupBack: {

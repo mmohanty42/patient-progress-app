@@ -19,7 +19,7 @@
     "ios": {
       "supportsTablet": true
     },
-    "description": "To view our app: Download the Expo app from the app store (you don't need an Expo account). Open the Expo app and click on \"Scan QR code\". Scan the QR code provided on this page and it will load the Patient Progress app on your device. Unfortunately, this won't work for iOS users due to Apple's review guidelines for Expo. Alternatively, you could click on the purple link to your right that says \"Open project in the browser\" >> \"Open project\" >> \"Tap to Play\" >> once it loads, scroll down >> \"Open project using Expo\". We recommend heading over to the repository (https://github.com/Juel07/patient-progress-app) to view the video demo provided in the ReadMe.md file.",
-    "githubUrl": "https://github.com/Juel07/patient-progress-app"
+    "description": "To view our app: Download the Expo app from the app store (you don't need an Expo account). Open the Expo app and click on \"Scan QR code\". Scan the QR code provided on this page and it will load the Patient Progress app on your device. Unfortunately, this won't work for iOS users due to Apple's review guidelines for Expo. Alternatively, you could click on the purple link to your right that says \"Open project in the browser\" >> \"Open project\" >> \"Tap to Play\" >> once it loads, scroll down >> \"Open project using Expo\". We recommend heading over to the repository (https://github.com/mmohanty42/patient-progress-app) to view the video demo provided in the ReadMe.md file.",
+    "githubUrl": "https://github.com/mmohanty42/patient-progress-app"
   }
 }
