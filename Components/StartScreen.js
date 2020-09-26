@@ -20,7 +20,7 @@ const StartScreen = ({ navigation }) => {
     >
       <Image
         source={bigger}
-        style={{ width: 350, marginBottom: 70, height: 160 }}
+        style={{ width: 350, marginBottom: 70 }}
       />
       <CustomButton
         text="Sign Up"
