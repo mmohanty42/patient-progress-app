@@ -40,7 +40,8 @@ export default class SecondFeed extends Component {
   }
 
   componentDidMount() {
-    fetch("https://nhs-services.herokuapp.com/api/patients/1149486687")
+    /*fetch("https://nhs-services.herokuapp.com/api/patients/1149486687")*/
+    fetch("https://run.mocky.io/v3/c28afccc-41bf-4ca9-8acb-921951a0a48c")
       .then((response) => response.json())
       .then((userData) => this.setState({ userData }));
   }
@@ -104,7 +105,7 @@ export default class SecondFeed extends Component {
           <View style={styles.userContainer}>
             <Text style={styles.userName}>{this.state.userData.full_name}</Text>
             <Text style={styles.userNo}>
-              UID NUMBER: {this.state.userData.nhs_number}
+              NHS NUMBER: {this.state.userData.nhs_number}
             </Text>
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.userNo}>PROGRESS: </Text>
@@ -241,6 +242,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 2,
     shadowRadius: 4,
     elevation: 5,
+    borderRadius: 40,
   },
   //Pop-up styling
   popupBack: {

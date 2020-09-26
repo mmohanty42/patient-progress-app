@@ -32,7 +32,7 @@ export default function aboutPage() {
               marginBottom: 7,
             }}
           >
-            Patient Progress
+            SANJAYA
           </Text>
           <Text
             style={{ fontFamily: "Regular", fontSize: 20, marginBottom: 20 }}

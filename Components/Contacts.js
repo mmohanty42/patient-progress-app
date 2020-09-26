@@ -49,7 +49,7 @@ const Contacts = ({ navigation }) => {
   } else {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor='#32afa9' barStyle='light-content' />
+        <StatusBar backgroundColor="#32afa9" barStyle="light-content" />
         <View style={styles.topContainer}>
           {/* THIS IS THE USER INFO */}
           <View style={styles.user}>
@@ -62,18 +62,43 @@ const Contacts = ({ navigation }) => {
             >
               <Image
                 style={styles.userImage}
-                resizeMode='contain'
+                resizeMode="contain"
                 source={require("../assets/JohnDoe.png")}
               />
             </View>
 
             <View style={styles.userInfo}>
               <View style={styles.userContainer}>
-                <Text style={styles.userName}>Snehashis</Text>
+                <Text style={styles.userName}>Manoranjan Mohanty</Text>
               </View>
 
               <View style={styles.userContainer}>
-                <Text style={styles.userNo}>UID NUMBER: 123 456 7890</Text>
+                <Text style={styles.userNo}>NID NUMBER: 000 123 4567</Text>
+              </View>
+              <View style={styles.rect1}>
+                <TouchableOpacity
+                  style={styles.relativeCard}
+                  onPress={() => navigation.navigate("Feed")}
+                >
+                  <View style={styles.relative}>
+                    <Avatar.Image
+                      size={50}
+                      source={require("../assets/JohnDoe.png")}
+                    />
+                  </View>
+                  <View style={styles.relativeInfo}>
+                    <View>
+                      {/*<Text style={styles.relativeFullName}>Mano Mohanty</Text> */}
+                      <Text style={styles.relativeHosp}>Appollo Hospital</Text>
+                    </View>
+                    <View style={styles.update}>
+                      <Text style={styles.relativeUpdate}>Updated:</Text>
+                      <Text style={styles.date_time}> 16th Sept</Text>
+                      <Text style={styles.relativeUpdate}> at</Text>
+                      <Text style={styles.date_time}> 20:09</Text>
+                    </View>
+                  </View>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
@@ -86,22 +111,20 @@ const Contacts = ({ navigation }) => {
               onPress={() => setModalOpen(true)}
             >
               <View style={styles.buttonTitle}>
-                <Text style={styles.buttonText}> Add Emergency Contacts </Text>
+                <Text style={styles.buttonText}>My relatives/friends</Text>
               </View>
-
               <View style={styles.buttonImage}>
                 <Image
                   style={styles.buttonAdd}
-                  resizeMode='contain'
+                  resizeMode="contain"
                   source={require("../assets/Vector.png")}
                 />
               </View>
-
               {/* MODAL 1... */}
               <Modal
                 transparent={true}
                 visible={modalOpen}
-                animationType='fade'
+                animationType="fade"
               >
                 <View style={styles.popupBack}>
                   <View style={styles.popup}>
@@ -130,52 +153,174 @@ const Contacts = ({ navigation }) => {
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
-                        ></TextInput>
-
-                        <TextInput
-                          style={styles.popupDOB}
-                          maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
-                        ></TextInput>
-                        <TextInput
-                          style={styles.popupDOB}
-                          maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
 
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
                         <TextInput
                           style={styles.popupDOB}
                           maxLength={1}
-                          keyboardType='numeric'
-                          textAlign='center'
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                      </View>
+                    </View>
+
+                    <View style={styles.popupButtons}>
+                      <TouchableOpacity onPress={() => setModalOpen(false)}>
+                        <View style={styles.popupCancel}>
+                          <Text
+                            style={{
+                              fontFamily: "Medium",
+                              fontSize: 16,
+                              color: "white",
+                            }}
+                          >
+                            Back
+                          </Text>
+                        </View>
+                      </TouchableOpacity>
+
+                      <TouchableOpacity
+                        onPress={() => {
+                          setModalOpen(false);
+                          setModalTwoOpen(true);
+                        }}
+                      >
+                        <View style={styles.popupAdd}>
+                          <Text
+                            style={{
+                              fontFamily: "Medium",
+                              fontSize: 16,
+                              color: "white",
+                            }}
+                          >
+                            Next
+                          </Text>
+                        </View>
+                      </TouchableOpacity>
+                    </View>
+                  </View>
+                </View>
+              </Modal>
+              {/* MODAL 1... */}
+
+              {/* MODAL 1... */}
+              <Modal
+                transparent={true}
+                visible={modalOpen}
+                animationType="fade"
+              >
+                <View style={styles.popupBack}>
+                  <View style={styles.popup}>
+                    <View style={styles.popupText}>
+                      <Text style={{ fontFamily: "SemiBold", fontSize: 18 }}>
+                        New Patient
+                      </Text>
+                    </View>
+
+                    <View style={styles.popupText}>
+                      <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
+                        Relative's Full Name:
+                      </Text>
+                      <TextInput
+                        style={styles.popupInput}
+                        minLength={2}
+                      ></TextInput>
+                    </View>
+
+                    <View style={styles.popupText}>
+                      <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
+                        Relative's D.O.B (dd/mm/yyyy):
+                      </Text>
+
+                      <View style={{ flexDirection: "row" }}>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
+                        ></TextInput>
+                        <TextInput
+                          style={styles.popupDOB}
+                          maxLength={1}
+                          keyboardType="numeric"
+                          textAlign="center"
                         ></TextInput>
                       </View>
                     </View>
@@ -223,7 +368,7 @@ const Contacts = ({ navigation }) => {
               <Modal
                 transparent={true}
                 visible={modalTwoOpen}
-                animationType='fade'
+                animationType="fade"
               >
                 <View style={styles.popupBack}>
                   <View style={styles.popup2}>
@@ -239,7 +384,7 @@ const Contacts = ({ navigation }) => {
                       </Text>
                       <TextInput
                         style={styles.popupInput2}
-                        dataDetectorTypes='address'
+                        dataDetectorTypes="address"
                         scrollEnabled
                         multiline
                         numberOfLines={6}
@@ -248,13 +393,13 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "Regular", fontSize: 16 }}>
-                        Relative's UID Number:
+                        Relative's NHS Number:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
                         minLength={10}
                         maxLength={10}
-                        keyboardType='numeric'
+                        keyboardType="numeric"
                       ></TextInput>
                     </View>
 
@@ -262,7 +407,7 @@ const Contacts = ({ navigation }) => {
                       <View>
                         <Text
                           style={{ fontFamily: "Regular", fontSize: 14 }}
-                          textAlign='center'
+                          textAlign="center"
                         >
                           Notify me if my relative
                         </Text>
@@ -277,7 +422,7 @@ const Contacts = ({ navigation }) => {
                           toggleRest();
                         }}
                       >
-                        <View pointerEvents='none' style={{ marginLeft: "1%" }}>
+                        <View pointerEvents="none" style={{ marginLeft: "1%" }}>
                           <Switch
                             style={styles.switch}
                             value={isRest}
@@ -331,12 +476,11 @@ const Contacts = ({ navigation }) => {
                 </View>
               </Modal>
               {/* MODAL 2... */}
-
               {/* MODAL 3... */}
               <Modal
                 transparent={true}
                 visible={modalThreeOpen}
-                animationType='fade'
+                animationType="fade"
               >
                 <View style={styles.popupBack}>
                   <View style={styles.popup3}>
@@ -349,13 +493,13 @@ const Contacts = ({ navigation }) => {
                     <View style={styles.popupText}>
                       <Text
                         style={{ fontFamily: "Regular", fontSize: 16 }}
-                        textAlign='center'
+                        textAlign="center"
                       >
                         Your request has been sent for
                       </Text>
                       <Text
                         style={{ fontFamily: "Regular", fontSize: 16 }}
-                        textAlign='center'
+                        textAlign="center"
                       >
                         authorisation
                       </Text>
@@ -404,7 +548,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}>Sreevidya</Text>
+                  <Text style={styles.relativeFullName}>Hema Sandhya</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>
@@ -432,7 +576,7 @@ const Contacts = ({ navigation }) => {
               </View>
               <View style={styles.relativeInfo}>
                 <View>
-                  <Text style={styles.relativeFullName}>Hema</Text>
+                  <Text style={styles.relativeFullName}>Sree Vidya</Text>
                   <Text style={styles.relativeHosp}>
                     St.George&#39;s Hospital
                   </Text>
@@ -497,7 +641,30 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
   },
 
+  selfCard: {
+    flex: 2,
+    flexDirection: "row",
+    elevation: 5,
+    shadowColor: "grey",
+    shadowOffset: {
+      width: 4,
+      height: 4,
+    },
+    shadowOpacity: 50,
+    shadowRadius: 4,
+    backgroundColor: "#32afa9",
+    borderBottomLeftRadius: 50,
+    justifyContent: "space-evenly",
+  },
+
   relative: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  self: {
     flex: 1,
     flexDirection: "row",
     justifyContent: "center",

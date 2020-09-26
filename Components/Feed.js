@@ -40,7 +40,8 @@ export default class BasicTimeLine extends Component {
   }
 
   componentDidMount() {
-    fetch("https://nhs-services.herokuapp.com/api/patients/2147483647")
+    /*fetch("https://nhs-services.herokuapp.com/api/patients/2147483647")*/
+    fetch("https://run.mocky.io/v3/2ca794f9-1b6a-4a02-8b3a-7e9abfa1c7f2")
       .then((response) => response.json())
       .then((userData) => this.setState({ userData }));
   }
@@ -104,7 +105,7 @@ export default class BasicTimeLine extends Component {
           <View style={styles.userContainer}>
             <Text style={styles.userName}>{this.state.userData.full_name}</Text>
             <Text style={styles.userNo}>
-              UID NUMBER: {this.state.userData.UID_number}
+              NHS NUMBER: {this.state.userData.nhs_number}
             </Text>
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.userNo}>PROGRESS: </Text>
