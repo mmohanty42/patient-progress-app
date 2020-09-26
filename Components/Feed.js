@@ -104,7 +104,7 @@ export default class BasicTimeLine extends Component {
           <View style={styles.userContainer}>
             <Text style={styles.userName}>{this.state.userData.full_name}</Text>
             <Text style={styles.userNo}>
-              NHS NUMBER: {this.state.userData.nhs_number}
+              UID NUMBER: {this.state.userData.UID_number}
             </Text>
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.userNo}>PROGRESS: </Text>
