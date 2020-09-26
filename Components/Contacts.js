@@ -129,13 +129,13 @@ const Contacts = ({ navigation }) => {
                   <View style={styles.popup}>
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "SemiBold", fontSize: 18 }}>
-                        New Patient
+                        New Contact
                       </Text>
                     </View>
 
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
-                        Relative's Full Name:
+                        Full name:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
@@ -145,7 +145,7 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
-                        Relative's D.O.B (dd/mm/yyyy):
+                        Contact Number:
                       </Text>
 
                       <View style={{ flexDirection: "row" }}>
@@ -251,13 +251,13 @@ const Contacts = ({ navigation }) => {
                   <View style={styles.popup}>
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "SemiBold", fontSize: 18 }}>
-                        New Patient
+                        New Contact
                       </Text>
                     </View>
 
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
-                        Relative's Full Name:
+                        Full Name:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
@@ -267,7 +267,7 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText}>
                       <Text style={{ fontFamily: "Regular", fontSize: 15 }}>
-                        Relative's D.O.B (dd/mm/yyyy):
+                        Contact Number:
                       </Text>
 
                       <View style={{ flexDirection: "row" }}>
@@ -373,13 +373,13 @@ const Contacts = ({ navigation }) => {
                   <View style={styles.popup2}>
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "SemiBold", fontSize: 18 }}>
-                        New Patient
+                        New Contact
                       </Text>
                     </View>
 
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "Regular", fontSize: 16 }}>
-                        Relative's Full Address:
+                        Address:
                       </Text>
                       <TextInput
                         style={styles.popupInput2}
@@ -392,7 +392,7 @@ const Contacts = ({ navigation }) => {
 
                     <View style={styles.popupText2}>
                       <Text style={{ fontFamily: "Regular", fontSize: 16 }}>
-                        Relative's NHS Number:
+                        UID Number:
                       </Text>
                       <TextInput
                         style={styles.popupInput}
@@ -400,36 +400,6 @@ const Contacts = ({ navigation }) => {
                         maxLength={10}
                         keyboardType="numeric"
                       ></TextInput>
-                    </View>
-
-                    <View style={styles.notify}>
-                      <View>
-                        <Text
-                          style={{ fontFamily: "Regular", fontSize: 14 }}
-                          textAlign="center"
-                        >
-                          Notify me if my relative
-                        </Text>
-                        <Text style={{ fontFamily: "Regular", fontSize: 14 }}>
-                          {" "}
-                          passes away
-                        </Text>
-                      </View>
-
-                      <TouchableRipple
-                        onPress={() => {
-                          toggleRest();
-                        }}
-                      >
-                        <View pointerEvents="none" style={{ marginLeft: "1%" }}>
-                          <Switch
-                            style={styles.switch}
-                            value={isRest}
-                            trackColor={{ false: "#767577", true: "#58ACA8" }}
-                            thumbColor={isRest ? "#32afa9" : "#393b3a"}
-                          />
-                        </View>
-                      </TouchableRipple>
                     </View>
 
                     <View style={styles.popupButtons}>
@@ -754,7 +724,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   buttonText: {
-    fontSize: 16,
+    fontSize: 14,
     fontFamily: "SemiBold",
     textAlign: "justify",
   },

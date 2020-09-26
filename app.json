@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "patient-progress-app",
+    "name": "sanjaya",
     "sdkVersion": "37.0.0",
-    "slug": "patient-progress-app",
+    "slug": "sanjaya",
     "platforms": [
       "ios",
       "android",

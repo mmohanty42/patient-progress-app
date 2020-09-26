@@ -139,7 +139,7 @@ export default class BasicTimeLine extends Component {
 
                 <TimelineEnd
                     rawData={this.state.userData.diagnoses[2]}
-                    data={this.state.userData.diagnoses[1].diagnosis_name}
+                    data={this.state.userData.diagnoses[2].diagnosis_name}
                     description={dataDescription.other.message}
                     extras={""}
                 />
